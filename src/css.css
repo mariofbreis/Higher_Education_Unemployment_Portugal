@@ -1,0 +1,159 @@
+/*################## HTML ##################*/
+.title{
+	text-align: center;
+}
+
+#universityVis {
+	width: 100%;
+	height: 88%;
+	overflow-y: scroll;
+}
+#universityBreadcrumb {
+	width: 100%;
+}
+#areaSlider {
+	width: 100%;
+	height: 5%;
+}
+#areaVis {
+	width: 100%;
+	height: 55%;
+}
+#courseScatterVis {
+	width: 100%;
+	height: 20%;
+}
+#lineChartVis {
+	width: 100%;
+	height: 20%;
+}
+
+h1,h4,text {
+	font: sans-serif;
+}
+
+/* Axis and selectors label ticks */
+.tick > text {
+	font-size: 9pt;
+}
+
+/* Axis description labels */
+.axisLabel {
+	font-size: 12pt;
+}
+
+/* Background color of the visualization */
+.background {
+	background-color : white;
+}
+
+/*#############################################
+#             Courses Matrix View             #
+#############################################*/
+
+.matrixLine {
+	fill-opacity: 0;
+	cursor: pointer;
+}
+
+.matrixDot,.breadcrumbItem {
+	cursor: pointer;
+}
+
+.matrixLine-hover {
+	fill: steelblue;
+	fill-opacity: 0.2;
+	cursor: pointer;
+}
+
+/*############ CONTEXT MENU ################ */
+
+.menu-entry {
+	fill: steelblue;
+	cursor: pointer;
+}
+
+.menu-entry:hover {
+	fill: red;
+}
+
+.menu-entry.text {
+	fill: black;
+}
+
+/*#############################################
+#               Sunburst View                 #
+#############################################*/
+
+.sunburst, .sunburstLabel, .labelsText {
+	cursor: pointer;
+	
+}
+
+path.sunburst {
+  stroke: #fff;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  cursor: grab;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+/*#############################################
+#             Line Chart View                 #
+#############################################*/
+
+.lineChartCourseMenuItem {
+	cursor: pointer;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5pt;
+}
+
+.line-hover {
+  fill: none;
+  stroke-width: 4pt;
+}
+
+/*#############################################
+#             Scatterplot View                #
+#############################################*/
+
+.universitySelected, .areaSelected, .scatterPlotDot {
+	cursor: pointer;
+}
+
+#lineChartWarning {
+	font-size: 12pt;
+}
+
+.scatterPlotDotHigh {
+	fill : grey;
+}
